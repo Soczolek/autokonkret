@@ -1,0 +1,3 @@
+INSTRUKCJA KORZYSTANIA ZE STRONY AUTOKONKRET:
+1. Wejść na stronę
+2. Wpisać 6 👍👍👍
