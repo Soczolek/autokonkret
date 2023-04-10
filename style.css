@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-  }
+}
 body {
     background-color: #333;
 }
@@ -11,19 +11,16 @@ nav {
     left: 0;
     width: 100%;
     background-color: black;
-}
-  
+}  
 nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
     text-align: center;
-}
-  
+} 
 nav ul li {
     display: inline-block;
-}
-  
+} 
 nav ul li a {
     display: block;
     padding: 16px;
@@ -31,8 +28,7 @@ nav ul li a {
     text-decoration: none;
     font-weight: bold;
     transition: all 0.2s ease-in-out;
-}
-  
+} 
 nav ul li a:hover {
     background-color: #333;
     color: white;
@@ -93,7 +89,6 @@ footer {
     justify-content: center;
     align-items: center;
     color: white;
-    
 }
 .dlaczego1 {
     width: 650px;
@@ -173,10 +168,8 @@ footer {
     border-radius: 25px;
     margin: auto;
     margin-top: 48px;
-    
 }
 .dlaczegomyp {
-
     text-align: center;
     color: white;
     font-size: 64px;
@@ -226,7 +219,6 @@ footer {
     border-radius: 10px;
     font-size: 20px;
 }
-
 .glow-on-hover:before {
     content: '';
     background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
@@ -243,19 +235,15 @@ footer {
     transition: opacity .3s ease-in-out;
     border-radius: 10px;
 }
-
 .glow-on-hover:active {
     color: #00ccff
 }
-
 .glow-on-hover:active:after {
     background: transparent;
 }
-
 .glow-on-hover:hover:before {
     opacity: 1;
 }
-
 .glow-on-hover:after {
     z-index: -1;
     content: '';
@@ -267,7 +255,6 @@ footer {
     top: 0;
     border-radius: 10px;
 }
-
 @keyframes glowing {
     0% { background-position: 0 0; }
     50% { background-position: 400% 0; }
@@ -285,240 +272,236 @@ footer {
     and (device-height: 844px) 
     and (-webkit-device-pixel-ratio: 3) {
 header {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 60px;
-        background-color: black;
-        z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    z-index: 1;
     }
 label {
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        width: 40px;
-        height: 40px;
-        cursor: pointer;
-        background-color: transparent;
-        border: none;
-        z-index: 2;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    z-index: 2;
     }
-    .h2 {
-        margin-left: 64px;
-        margin-right: 64px;
-      }
-      .glow-on-hover {
-        width: 440px;
-        height: 100px;
-        font-size: 48px;
-      }
-label::before {
-        content: "";
-        position: absolute;
-        top: 15%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 30px;
-        height: 3px;
-        background-color: #fff;
-        box-shadow:
-          0 7px 0 0 #fff,
-          0 14px 0 0 #fff;
-    }
-nav {
-        position: fixed;
-        top: 60px;
-        left: -100%;
-        width: 100%;
-        height: calc(100% - 60px);
-        background-color: black;
-        transition: all 0.3s ease-in-out;
-        z-index: 1;
-    }
-      
-nav ul {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-    }
-      
-nav li {
-        margin: 10px 0;
-    }
-nav li a {
-        color: #fff;
-        text-decoration: none;
-        font-size: 24px;
-    }
-#menu-toggle:checked ~ nav {
-        left: 0;
-    }
-#menu-toggle {
-        height: 0;
-        width: 0;
-    }
-  }
-  @media (max-width: 768px) {
-header {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 60px;
-      background-color: black;
-      z-index: 1;
-  }
-label {
-      position: absolute;
-      top: 20px;
-      right: 20px;
-      width: 40px;
-      height: 40px;
-      cursor: pointer;
-      background-color: transparent;
-      border: none;
-      z-index: 2;
-  }
-  .h2 {
+.h2 {
     margin-left: 64px;
     margin-right: 64px;
-  }
-  .glow-on-hover {
+    }
+.glow-on-hover {
     width: 440px;
     height: 100px;
     font-size: 48px;
-  }
+    }
 label::before {
-      content: "";
-      position: absolute;
-      top: 15%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 30px;
-      height: 3px;
-      background-color: #fff;
-      box-shadow:
-        0 7px 0 0 #fff,
-        0 14px 0 0 #fff;
-  }
+    content: "";
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    box-shadow:
+      0 7px 0 0 #fff,
+      0 14px 0 0 #fff;
+    }
 nav {
-      position: fixed;
-      top: 60px;
-      left: -100%;
-      width: 100%;
-      height: calc(100% - 60px);
-      background-color: black;
-      transition: all 0.3s ease-in-out;
-      z-index: 1;
-  }
-    
+    position: fixed;
+    top: 60px;
+    left: -100%;
+    width: 100%;
+    height: calc(100% - 60px);
+    background-color: black;
+    transition: all 0.3s ease-in-out;
+    z-index: 1;
+    }
 nav ul {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100%;
-  }
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    }
 nav li {
-      margin: 10px 0;
-  }
+    margin: 10px 0;
+    }
 nav li a {
-      color: #fff;
-      text-decoration: none;
-      font-size: 24px;
-  }
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    }
 #menu-toggle:checked ~ nav {
-      left: 0;
-  }
+    left: 0;
+    }
 #menu-toggle {
-      height: 0;
-      width: 0;
-  }
+    height: 0;
+    width: 0;
+    }
+}
+@media (max-width: 768px) {
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    z-index: 1;
+    }
+label {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    z-index: 2;
+    }
+.h2 {
+    margin-left: 64px;
+    margin-right: 64px;
+    }
+.glow-on-hover {
+    width: 440px;
+    height: 100px;
+    font-size: 48px;
+    }
+label::before {
+    content: "";
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    box-shadow:
+      0 7px 0 0 #fff,
+      0 14px 0 0 #fff;
+    }
+nav {
+    position: fixed;
+    top: 60px;
+    left: -100%;
+    width: 100%;
+    height: calc(100% - 60px);
+    background-color: black;
+    transition: all 0.3s ease-in-out;
+    z-index: 1;
+    }
+nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    }
+nav li {
+    margin: 10px 0;
+    }
+nav li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    }
+#menu-toggle:checked ~ nav {
+    left: 0;
+    }
+#menu-toggle {
+    height: 0;
+    width: 0;
+    }
 }
 @media (max-width: 1427px) {
-    .flex1 {
-        padding: 0;
-        margin: 0;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        color: white;
+.flex1 {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: white;
     }
-    .dlaczego1 {
-        width: 650px;
-        height: 512px;
-        background-color: #484848;
-        border-radius: 64px;
-        align-items: center;
-        margin: 0;
-        margin-top: 64px;
+.dlaczego1 {
+    width: 650px;
+    height: 512px;
+    background-color: #484848;
+    border-radius: 64px;
+    align-items: center;
+    margin: 0;
+    margin-top: 64px;
     }
-    .dlaczego1p {
-        padding: 64px;
-        font-size: 64px;
-        font-weight: 700;
+.dlaczego1p {
+    padding: 64px;
+    font-size: 64px;
+    font-weight: 700;
     }
-    .dlaczego1pp {
-        margin: 64px;
-        margin-top: -48px;
-        font-size: 28px;
+.dlaczego1pp {
+    margin: 64px;
+    margin-top: -48px;
+    font-size: 28px;
     }
-    .dlaczego2 {
-        width: 650px;
-        height: 512px;
-        background-color: #484848;
-        border-radius: 64px;
-        margin: 0;
-        margin-top: 64px;
+.dlaczego2 {
+    width: 650px;
+    height: 512px;
+    background-color: #484848;
+    border-radius: 64px;
+    margin: 0;
+    margin-top: 64px;
     }
-    .dlaczego2p {
-        padding: 64px;
-        font-size: 64px;
-        font-weight: 700;
+.dlaczego2p {
+    padding: 64px;
+    font-size: 64px;
+    font-weight: 700;
     }
-    .dlaczego2pp {
-        margin: 64px;
-        margin-top: -48px;
-        font-size: 28px;
+.dlaczego2pp {
+    margin: 64px;
+    margin-top: -48px;
+    font-size: 28px;
     }
-    .dlaczego3 {
-        width: 650px;
-        height: 512px;
-        margin-top: 64px;
-        background-color: #484848;
-        border-radius: 64px;
+.dlaczego3 {
+    width: 650px;
+    height: 512px;
+    margin-top: 64px;
+    background-color: #484848;
+    border-radius: 64px;
     }
-    .dlaczego3p {
-        padding: 64px;
-        font-size: 64px;
-        font-weight: 700;
+.dlaczego3p {
+    padding: 64px;
+    font-size: 64px;
+    font-weight: 700;
     }
-    .dlaczego3pp {
-        margin: 64px;
-        margin-top: -48px;
-        font-size: 28px;
+.dlaczego3pp {
+    margin: 64px;
+    margin-top: -48px;
+    font-size: 28px;
     }
-    .dlaczego4 {
-        width: 650px;
-        height: 512px;
-        background-color: #484848;
-        border-radius: 64px;
-        margin: 0;
-        margin-top: 64px;
+.dlaczego4 {
+    width: 650px;
+    height: 512px;
+    background-color: #484848;
+    border-radius: 64px;
+    margin: 0;
+    margin-top: 64px;
     }
-    .dlaczego4p {
-        padding: 64px;
-        font-size: 64px;
-        font-weight: 700;
+.dlaczego4p {
+    padding: 64px;
+    font-size: 64px;
+    font-weight: 700;
     }
-    .dlaczego4pp {
-        margin: 64px;
-        margin-top: -48px;
-        font-size: 28px;
+.dlaczego4pp {
+    margin: 64px;
+    margin-top: -48px;
+    font-size: 28px;
     }
 }
