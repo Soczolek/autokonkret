@@ -76,13 +76,14 @@ footer {
   footer p {
     text-align: center;
     width: 100%;;
+    margin: 0;
+    padding: 0;
   }
 .h2 {
     padding-top: 128px;
     margin-left: 128px;
     margin-right: 128px;
     text-align: center;
-    
 }
 .flex1 {
     padding: 0;
@@ -279,8 +280,10 @@ footer {
     margin-top: 64px;
     margin-bottom: 128px;
 }
-@media only screen and (max-width: 768px)
-and (-webkit-device-pixel-ratio: 3) {
+@media only screen
+    and (device-width: 390px) 
+    and (device-height: 844px) 
+    and (-webkit-device-pixel-ratio: 3) {
 header {
         position: fixed;
         top: 0;
@@ -301,6 +304,15 @@ label {
         border: none;
         z-index: 2;
     }
+    .h2 {
+        margin-left: 64px;
+        margin-right: 64px;
+      }
+      .glow-on-hover {
+        width: 440px;
+        height: 100px;
+        font-size: 48px;
+      }
 label::before {
         content: "";
         position: absolute;
@@ -349,3 +361,164 @@ nav li a {
         width: 0;
     }
   }
+  @media (max-width: 768px) {
+header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 60px;
+      background-color: black;
+      z-index: 1;
+  }
+label {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      background-color: transparent;
+      border: none;
+      z-index: 2;
+  }
+  .h2 {
+    margin-left: 64px;
+    margin-right: 64px;
+  }
+  .glow-on-hover {
+    width: 440px;
+    height: 100px;
+    font-size: 48px;
+  }
+label::before {
+      content: "";
+      position: absolute;
+      top: 15%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 30px;
+      height: 3px;
+      background-color: #fff;
+      box-shadow:
+        0 7px 0 0 #fff,
+        0 14px 0 0 #fff;
+  }
+nav {
+      position: fixed;
+      top: 60px;
+      left: -100%;
+      width: 100%;
+      height: calc(100% - 60px);
+      background-color: black;
+      transition: all 0.3s ease-in-out;
+      z-index: 1;
+  }
+    
+nav ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+  }
+    
+nav li {
+      margin: 10px 0;
+  }
+nav li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 24px;
+  }
+#menu-toggle:checked ~ nav {
+      left: 0;
+  }
+#menu-toggle {
+      height: 0;
+      width: 0;
+  }
+}
+@media (max-width: 1427px) {
+    .flex1 {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+    .dlaczego1 {
+        width: 650px;
+        height: 512px;
+        background-color: #484848;
+        border-radius: 64px;
+        align-items: center;
+        margin: 0;
+        margin-top: 64px;
+    }
+    .dlaczego1p {
+        padding: 64px;
+        font-size: 64px;
+        font-weight: 700;
+    }
+    .dlaczego1pp {
+        margin: 64px;
+        margin-top: -48px;
+        font-size: 28px;
+    }
+    .dlaczego2 {
+        width: 650px;
+        height: 512px;
+        background-color: #484848;
+        border-radius: 64px;
+        margin: 0;
+        margin-top: 64px;
+    }
+    .dlaczego2p {
+        padding: 64px;
+        font-size: 64px;
+        font-weight: 700;
+    }
+    .dlaczego2pp {
+        margin: 64px;
+        margin-top: -48px;
+        font-size: 28px;
+    }
+    .dlaczego3 {
+        width: 650px;
+        height: 512px;
+        margin-top: 64px;
+        background-color: #484848;
+        border-radius: 64px;
+    }
+    .dlaczego3p {
+        padding: 64px;
+        font-size: 64px;
+        font-weight: 700;
+    }
+    .dlaczego3pp {
+        margin: 64px;
+        margin-top: -48px;
+        font-size: 28px;
+    }
+    .dlaczego4 {
+        width: 650px;
+        height: 512px;
+        background-color: #484848;
+        border-radius: 64px;
+        margin: 0;
+        margin-top: 64px;
+    }
+    .dlaczego4p {
+        padding: 64px;
+        font-size: 64px;
+        font-weight: 700;
+    }
+    .dlaczego4pp {
+        margin: 64px;
+        margin-top: -48px;
+        font-size: 28px;
+    }
+}
